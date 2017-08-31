@@ -34,17 +34,17 @@ class ParamsController < ApplicationController
     end
   end
 
-  def form_show
+  def guess_form_show
     
   end
 
-  def form_send
+  def guess_form_send
     winning_number = 42
-    @value = params[:form_message].to_i
+    @guess = params[:form_message].to_i
 
-    if @value > winning_number
+    if @guess > winning_number
       @message = "too high :("
-    elsif @value < winning_number
+    elsif @guess < winning_number
       @message = "too low :("
     else
       @message = "a winner!!!"

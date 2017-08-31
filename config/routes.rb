@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get '/guess_query' => 'params#guess_query'
   get '/guess_url/:wildcard' => 'params#guess_url'
 
-  get '/form_show_example' => 'params#form_show'
-  post '/form_send_example' => 'params#form_send'
+  get '/guess_form_show' => 'params#guess_form_show'
+  post '/guess_form_send' => 'params#guess_form_send'
+
 
 end
